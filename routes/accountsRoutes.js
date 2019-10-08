@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
 			.catch(err => res.status(500).json({message: "The database ran into an error", err: err}))
 })
 
-//Read: /api/accounts/:id - gets the account information for a specific ID
+// Read: /api/accounts/:id - gets the account information for a specific ID
 router.get("/:id", (req, res) => {
 
 	// Accountid
